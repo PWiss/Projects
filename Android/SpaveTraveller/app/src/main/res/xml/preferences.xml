@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <PreferenceCategory
+        android:title="Game Options">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="enable_music"
+            android:title="Enable or disable Music"
+            />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="enable_sound"
+            android:title="Enable or disable Sound"
+            />
+
+        <ListPreference
+
+            android:key="key_background"
+            android:title="Background"
+            android:summary="chose a Background"
+            android:entries="@array/background"
+            android:entryValues="@array/backgroundValues"
+            android:defaultValue="1"/>
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
